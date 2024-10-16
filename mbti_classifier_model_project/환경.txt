@@ -1,0 +1,6 @@
+conda create -n TORCH_38 python=3.8
+conda activate TORCH_38
+conda install pytorch torchvision torchaudio cpuonly -c pytorch
+
+conda install pandas matplotlib numpy
+conda install scikit-learn torchmetrics transformers torchinfo
