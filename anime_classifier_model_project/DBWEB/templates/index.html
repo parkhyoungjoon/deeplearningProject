@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    {% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>{% block title %}{% endblock %} - My Webpage</title>
+    {% endblock %}
+  </head>
+<body>
+    <header>
+        <h1><a href="/">유저님 안녕하세요.</a></h1>
+        <nav>
+            <ul>
+                <li><a href="/ageRating/ratingEval/drama">드라마</a></li>
+                <li><a href="/ageRating/ratingEval/movie">영화</a></li>
+                <li><a href="/ageRating/ratingEval/webtoon">웹툰</a></li>
+                <li><a href="/ageRating/ratingEval/anime">애니메이션</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="content">
+            {% block content %}
+                <div class="title">
+                    작품 리스트
+                </div>
+                {% for ani,age in results %}
+                    <ul class="list_tile">
+                        <li>{{ ani.id }}</li>
+                        <li>{{ ani.title }}</li>
+                        <li>{{ ani.content }}</li>
+                        <li>{{ age.age_name }}</li>  <!-- 특정 인덱스를 사용하거나 변수명을 확인하세요 -->
+                    </ul>
+                {% endfor %}
+            
+            {% endblock %}
+        </div>
+    </section>
+    <footer>
+    {% block footer %}
+        &copy; Copyright 2010 by <a href="http://domain.invalid/">PHJ</a>.
+    {% endblock %}
+    </footer>
+</body>
+</html>

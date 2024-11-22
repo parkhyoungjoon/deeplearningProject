@@ -1,0 +1,11 @@
+{% extends "/index.html" %}
+{% block content %}
+<h2>카테고리: {{ category }}</h2>
+<h3>자 스토리를 입력해주세여!</h3>
+    <form action="/ageRating/ratingEval/{{category}}" method="post">
+        <textarea name="acontent" id="acontent" cols="30" rows="10">{{acontent}}</textarea>
+        <button type="submit">등록버튼잼</button>
+    </form>
+
+<h2>결과잼: {{result}}</h2>
+{% endblock %}

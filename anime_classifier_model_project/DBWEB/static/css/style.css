@@ -1,0 +1,159 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;  /* 기본 폰트 설정 */
+    background-color: #000;  /* 배경색을 검정으로 */
+    color: #fff;  /* 텍스트 색상을 흰색으로 */
+    line-height: 1.6;  /* 줄 간격 조절 */
+}
+
+header {
+    background-color: #1a1a1a;  /* 헤더 배경색 */
+    padding: 20px;  /* 여백 설정 */
+    text-align: center;  /* 가운데 정렬 */
+    border-bottom: 2px solid #FFA500;  /* 아래쪽에 주황색 테두리 추가 */
+}
+
+h3 {
+    color: #FFA500;  /* 주황색으로 인사 강조 */
+    margin: 10px 0;  /* 인사 간 간격 설정 */
+}
+
+nav {
+    margin: 20px 0;  /* 네비게이션과 인사 간 간격 설정 */
+}
+
+nav ul {
+    list-style: none;  /* 리스트 스타일 제거 */
+}
+
+nav li {
+    display: inline;  /* 가로로 나열 */
+    margin: 0 15px;  /* 각 링크 간 간격 설정 */
+}
+
+nav a {
+    color: #FFA500;  /* 주황색 링크 텍스트 */
+    text-decoration: none;  /* 밑줄 제거 */
+    font-weight: bold;  /* 글씨 두껍게 */
+}
+
+nav a:hover {
+    color: #fff;  /* 마우스 오버 시 흰색으로 변경 */
+    text-decoration: underline;  /* 마우스 오버 시 밑줄 추가 */
+}
+
+section {
+    padding: 40px 20px;  /* 섹션 여백 설정 */
+    text-align: center;  /* 가운데 정렬 */
+}
+
+h2 {
+    color: #FFA500;  /* 주황색으로 제목 강조 */
+    margin-bottom: 10px;  /* 제목 간 간격 설정 */
+}
+
+form {
+    background-color: #1a1a1a;  /* 폼 배경색 */
+    padding: 20px;  /* 여백 설정 */
+    border-radius: 8px;  /* 모서리 둥글게 */
+    margin-bottom: 20px;  /* 폼과 결과 간 간격 설정 */
+    display: inline-block;  /* 중앙 정렬을 위해 inline-block 설정 */
+}
+
+textarea {
+    width: 100%;  /* 너비를 100%로 설정 */
+    padding: 10px;  /* 패딩 추가 */
+    border: 1px solid #FFA500;  /* 주황색 테두리 */
+    border-radius: 5px;  /* 모서리 둥글게 */
+    background-color: #2b2b2b;  /* 텍스트 영역 배경색 */
+    color: #fff;  /* 텍스트 색상 */
+    font-size: 16px;  /* 폰트 크기 */
+    resize: none;  /* 리사이즈 비활성화 */
+}
+
+button {
+    background-color: #FFA500;  /* 주황색 배경 */
+    color: #fff;  /* 버튼 텍스트 색상 */
+    border: none;  /* 테두리 제거 */
+    padding: 15px 30px;  /* 여백을 늘려 버튼 크기 증가 */
+    border-radius: 8px;  /* 모서리 둥글게 */
+    cursor: pointer;  /* 커서 모양 변경 */
+    font-size: 18px;  /* 폰트 크기 증가 */
+    font-weight: bold;  /* 텍스트 두껍게 */
+    transition: background-color 0.3s, transform 0.3s;  /* 배경색 변화와 함께 부드러운 전환 효과 추가 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* 버튼에 그림자 효과 추가 */
+}
+
+button:hover {
+    background-color: #fff;  /* 마우스 오버 시 흰색으로 변경 */
+    color: #000;  /* 텍스트 색상을 검정으로 변경 */
+    transform: scale(1.05);  /* 마우스 오버 시 버튼 크기 살짝 증가 */
+}
+
+footer {
+    text-align: center;  /* 가운데 정렬 */
+    padding: 20px;  /* 여백 설정 */
+    background-color: #1a1a1a;  /* 푸터 배경색 */
+    color: #FFA500;  /* 주황색 텍스트 */
+    position: relative;
+    bottom: 0;
+    width: 100%;  /* 푸터 너비를 100%로 설정 */
+}
+
+footer a {
+    color: #FFA500;  /* 주황색 링크 텍스트 */
+    text-decoration: none;  /* 링크 밑줄 제거 */
+}
+
+footer a:hover {
+    color: #fff;  /* 마우스 오버 시 흰색으로 변경 */
+}
+.list_tile {
+    list-style-type: none; /* 기본 리스트 스타일 제거 */
+    padding: 0; /* 패딩 제거 */
+    margin: 0; /* 마진 제거 */
+}
+
+.list_tile {
+    color:#444;
+    display: flex; /* Flexbox를 사용하여 블록 스타일로 배열 */
+    justify-content: space-between; /* 항목 간 간격을 균등하게 배치 */
+    padding: 10px; /* 각 항목에 패딩 추가 */
+    border: 1px solid #ccc; /* 테두리 추가 */
+    margin-bottom: 10px; /* 각 항목 간 간격 */
+    background-color: #f9f9f9; /* 배경 색상 */
+    border-radius: 5px; /* 모서리 둥글게 */
+    transition: background-color 0.3s; /* 호버 효과를 위한 전환 */
+}
+
+.list_tile li:hover {
+    background-color: #e9e9e9; /* 호버 시 배경 색상 변경 */
+}
+.title {
+    font-size: 24px; /* 제목의 폰트 크기 설정 */
+    font-weight: bold; /* 제목을 굵게 */
+    color: #333; /* 글자 색상 설정 */
+    background-color: rgba(255, 255, 255, 0.8); /* 반투명 배경 색상 */
+    padding: 15px; /* 패딩 추가 */
+    border-radius: 8px; /* 모서리 둥글게 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+    margin: 10px 0; /* 위 아래 마진 추가 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+}
+
+h1 a {color:#eee; text-decoration-line: none;}
+
+.scroll-container {
+    max-height: 300px; /* 최대 높이 설정 */
+    overflow-y: auto; /* 수직 스크롤 추가 */
+    border: 1px solid #ccc; /* 테두리 추가 */
+    border-radius: 8px; /* 모서리 둥글게 */
+    padding: 10px; /* 패딩 추가 */
+    background-color: #f9f9f9; /* 배경 색상 */
+}
