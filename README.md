@@ -22,6 +22,7 @@ konlpy : 0.6.0
 opencv : 4.10.0
 
 ### 커스텀 모델
+AnimeModel : 애니메이션 줄거리를 분석하여 연령제한을 분류하믄 모델 개발
 MLPModel : SNS POST를 분석하여 MBTI 분류하는 모델 개발
 SkinKitModel : 피부 이미지를 통해 피부병 분류하는 다중분류 모델 개발
 ReviewClassifierModel : 쇼핑몰 리뷰를 다중분류하여 키워드 추출 2진분류로 감정분석 실시
